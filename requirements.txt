@@ -1,0 +1,24 @@
+# Policy Conditioning Study - Requirements
+# Python 3.11+
+
+# Core RL
+gymnasium[box2d]>=1.0.0
+stable-baselines3>=2.0.0
+
+# Deep Learning
+torch>=2.0.0
+
+# Scientific Computing
+numpy>=1.24.0
+pandas>=2.0.0
+matplotlib>=3.7.0
+
+# Logging & Visualization
+tensorboard>=2.13.0
+tqdm>=4.65.0
+rich>=13.0.0
+
+# Environment dependencies (installed via gymnasium[box2d])
+# box2d-py
+# pygame
+# swig
