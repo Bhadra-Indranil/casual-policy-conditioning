@@ -1,0 +1,34 @@
+# ===== Python =====
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+
+# ===== Virtual Environments =====
+.venv/
+venv/
+env/
+ENV/
+
+# ===== OS / Editor junk =====
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# ===== Logs & outputs =====
+*.log
+tensorboard/
+runs/
+experiments/
+evaluation_results/
+
+# ===== Checkpoints & models =====
+*.zip
+*.pt
+*.pth
+
+# ===== Temporary =====
+*.tmp
+*.bak
