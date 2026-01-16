@@ -389,8 +389,8 @@ def evaluate_model(
     print(f"Model: {model_path}")
     print(f"{'='*60}")
     
-    # Load model
-    model = PPO.load(model_path)
+    # Load model (explicitly use GPU)
+    model = PPO.load(model_path, device= torch.device("cuda" if torch.cuda.is_available() else "cpu"))
     
     # Run evaluations
     print("\n📊 Running Settling Time evaluation...")

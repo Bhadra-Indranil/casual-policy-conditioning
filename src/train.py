@@ -16,6 +16,7 @@ Usage:
 
 import os
 import argparse
+import torch
 from datetime import datetime
 from pathlib import Path
 from typing import Callable
@@ -228,6 +229,7 @@ def train_agent(
     model = PPO(
         policy='MlpPolicy',
         env=train_env,
+        device= torch.device("cuda" if torch.cuda.is_available() else "cpu"),  # Explicitly use GPU
         learning_rate=LinearSchedule(PPO_CONFIG['learning_rate']),
         n_steps=PPO_CONFIG['n_steps'],
         batch_size=PPO_CONFIG['batch_size'],
