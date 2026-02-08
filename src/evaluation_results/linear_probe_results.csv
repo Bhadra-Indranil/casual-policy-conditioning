@@ -1,0 +1,5 @@
+agent_type,r2_score,mse,n_samples,interpretation
+baseline,0.098,0.2994,10892,IGNORES_SIGNAL
+conditioned,1.0,0.0,9295,ENCODES_TARGET
+noise,0.064,0.3229,8683,IGNORES_SIGNAL
+shuffled,0.174,0.2689,11628,IGNORES_SIGNAL

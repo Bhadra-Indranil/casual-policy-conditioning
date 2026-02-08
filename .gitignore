@@ -22,7 +22,7 @@ Thumbs.db
 tensorboard/
 runs/
 experiments/
-evaluation_results/
+# evaluation_results/
 
 # ===== Checkpoints & models =====
 *.zip
